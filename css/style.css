@@ -421,10 +421,6 @@ button {
     .nav__close {
         display: block;
     }
-
-    .header-resume-btn {
-        display: none;
-    }
 }
 
 /* ==================== HERO SECTION ==================== */
