@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Lena T P, a premium Python Developer. Discover projects, visualizations, database analysis, and experience in SQL, Python, Power BI, and Excel.">
+    <meta name="keywords" content="Python Developer, Lena T P, Portfolio, Power BI, SQL, Python, Tableau, Excel, Data Visualization, Business Intelligence, Data Cleaning">
+    <meta name="author" content="Lena T P">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Lenak.github.io/">
+    <meta property="og:title" content="Lena T P | Python Developer Portfolio">
+    <meta property="og:description" content="Premium portfolio of Lena T P, a Python Developer. Transforming data into actionable insights and business solutions.">
+    
+    <title>Lena T P | Python Developer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/profile.jpg" type="image/jpeg">
+    
+    <!-- Google Fonts: Outfit (For Headings) & Inter (For Body Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons CDN for modern iconography -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+</head>
+<body>
+    <!-- Canvas Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Ambient Background Glows -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo" id="nav-logo">
+                Lena<span class="logo-dot">.</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#education-certs" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <a href="assets/resume.pdf" download="Lena_K_Resume.pdf" class="btn btn-resume header-resume-btn">
+                    <i class="bx bx-download"></i> Resume
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                
+                <!-- Hero Left: Info & CTAs -->
+                <div class="hero__content">
+                    <span class="hero__subtitle">Hello, I'm</span>
+                    <h1 class="hero__title">
+                        Lena T P.
+                    </h1>
+                    <div class="hero__roles">
+                        <span class="role-primary">Software Developer</span>
+                        <span class="role-secondary">&amp; Tech Enthusiast</span>
+                    </div>
+                    <p class="hero__description">
+                        Passionate Python Developer focused on building clean, scalable, and user-centric software solutions that turn complex problems into elegant code.
+                    </p>
+                    
+                    <div class="hero__cta">
+                        <a href="#contact" class="btn btn-primary" id="hero-contact-btn">
+                            Hire Me
+                        </a>
+                        <a href="#projects" class="btn btn-outline" id="hero-projects-btn">
+                            View Projects
+                        </a>
+                    </div>
+                    
+                    <div class="hero__socials">
+                        <span class="hero__socials-text">Follow my analytics journey:</span>
+                        <div class="hero__socials-links">
+                            <a href="https://linkedin.com" target="_blank" class="hero__social-link" id="social-linkedin" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                            <a href="https://linkedin.com/in/lena-unnikrishnan"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="hero__social-link" id="social-twitter" aria-label="Twitter/X"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://www.instagram.com/Lena.__._/" target="_blank" class="hero__social-link" id="social-instagram" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://facebook.com" target="_blank" class="hero__social-link" id="social-facebook" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Profile Image -->
+                <div class="hero__visual">
+                    <div class="hero__image-wrapper">
+                        <div class="hero__blob">
+                            <div class="hero__blob-glow"></div>
+                            <img src="assets/profile.jpg" alt="Lena T P. - Python Developer" class="hero__img" id="hero-profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Animated Stats Bar -->
+            <div class="hero__stats container grid">
+                <div class="stat__card">
+                    <div class="stat__icon"><i class="bx bx-bar-chart-alt-2"></i></div>
+                    <div>
+                        <h3 class="stat__number" data-target="10">0</h3>
+                        <p class="stat__label">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="stat__card">
+                    <div class="stat__icon"><i class="bx bx-data"></i></div>
+                    <div>
+                        <h3 class="stat__number" data-target="15">0</h3>
+                        <p class="stat__label">Datasets Analyzed</p>
+                    </div>
+                </div>
+                <div class="stat__card">
+                    <div class="stat__icon"><i class="bx bx-wrench"></i></div>
+                    <div>
+                        <h3 class="stat__number" data-target="5">0</h3>
+                        <p class="stat__label">Tools Mastered</p>
+                    </div>
+                </div>
+                <div class="stat__card">
+                    <div class="stat__icon"><i class="bx bx-certification"></i></div>
+                    <div>
+                        <h3 class="stat__number" data-target="3">0</h3>
+                        <p class="stat__label">Certifications Earned</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section__title text-center">About Me</h2>
+            <span class="section__subtitle text-center">My background and passion</span>
+            
+            <div class="about__container container grid">
+                <div class="about__quote-container scroll-reveal-left">
+                    <div class="quote-card">
+                        <i class="bx bxs-quote-left quote-icon"></i>
+                        <p class="about__highlight-text">
+                            "I am an MCA graduate and Python Developer with hands-on experience in Python, Django, SQL, and backend development."
+                        </p>
+                    </div>
+                    <div class="about__detailed-bio">
+                        <p>
+                            Skilled in building web applications, database-driven systems, and scalable solutions through academic and internship projects. 
+                        </p>
+                        <p>
+                            I possess strong problem-solving abilities and a passion for clean code and efficient application development.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about__expertise scroll-reveal-right">
+                    <h3 class="about__expertise-title">Key Pillars of Expertise</h3>
+                    <div class="expertise__list">
+                        
+                        <div class="expertise__item">
+                            <div class="expertise__header">
+                                <div class="expertise__icon-box"><i class="bx bxl-python"></i></div>
+                                <h4 class="expertise__name">Backend Development</h4>
+                            </div>
+                            <p class="expertise__desc">Building scalable web applications and APIs using Python and Django.</p>
+                        </div>
+                        
+                        <div class="expertise__item">
+                            <div class="expertise__header">
+                                <div class="expertise__icon-box"><i class="bx bx-data"></i></div>
+                                <h4 class="expertise__name">Database Management</h4>
+                            </div>
+                            <p class="expertise__desc">Designing and optimizing SQL databases (MySQL) to improve data management and query performance.</p>
+                        </div>
+                        
+                        <div class="expertise__item">
+                            <div class="expertise__header">
+                                <div class="expertise__icon-box"><i class="bx bx-brain"></i></div>
+                                <h4 class="expertise__name">Machine Learning &amp; NLP</h4>
+                            </div>
+                            <p class="expertise__desc">Applying ML and NLP techniques using Scikit-learn for text classification and prediction.</p>
+                        </div>
+                        
+                        <div class="expertise__item">
+                            <div class="expertise__header">
+                                <div class="expertise__icon-box"><i class="bx bx-code-block"></i></div>
+                                <h4 class="expertise__name">Clean Code &amp; Architecture</h4>
+                            </div>
+                            <p class="expertise__desc">Applying Object-Oriented Programming (OOP) and standard Software Development Life Cycle (SDLC) practices.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title text-center">My Skills</h2>
+            <span class="section__subtitle text-center">The tools and techniques I use</span>
+            
+            <div class="skills__container container grid">
+                
+                <!-- Category 1: Languages & Tools -->
+                <div class="skills__category skills__category--full">
+                    <h3 class="skills__category-title"><i class="bx bx-code-alt"></i> Languages &amp; Tools</h3>
+                    <div class="skills__grid skills__grid--6col">
+                        <div class="skill-card scroll-reveal"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bxl-python"></i></div><h4 class="skill-card__name">Python</h4><span class="skill-card__level">Advanced</span></div>
+                        <div class="skill-card scroll-reveal"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bxl-html5"></i></div><h4 class="skill-card__name">HTML/CSS/JS</h4><span class="skill-card__level">Advanced</span></div>
+                        <div class="skill-card scroll-reveal"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bxl-java"></i></div><h4 class="skill-card__name">Java</h4><span class="skill-card__level">Intermediate</span></div>
+                        <div class="skill-card scroll-reveal"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bx-cylinder"></i></div><h4 class="skill-card__name">SQL / MySQL</h4><span class="skill-card__level">Advanced</span></div>
+                        <div class="skill-card scroll-reveal"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bxl-git"></i></div><h4 class="skill-card__name">Git</h4><span class="skill-card__level">Advanced</span></div>
+                        <div class="skill-card scroll-reveal"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bx-code"></i></div><h4 class="skill-card__name">VS Code</h4><span class="skill-card__level">Advanced</span></div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Core Concepts -->
+                <div class="skills__category skills__category--full">
+                    <h3 class="skills__category-title"><i class="bx bx-brain"></i> Core Concepts</h3>
+                    <div class="skills__grid skills__grid--3col">
+                        <div class="skill-card"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bx-network-chart"></i></div><h4 class="skill-card__name">OOP &amp; Data Structures</h4><span class="skill-card__level">Advanced</span></div>
+                        <div class="skill-card"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bx-analyse"></i></div><h4 class="skill-card__name">Machine Learning</h4><span class="skill-card__level">Intermediate</span></div>
+                        <div class="skill-card"><div class="skill-card__glow"></div><div class="skill-card__icon"><i class="bx bx-cog"></i></div><h4 class="skill-card__name">SDLC &amp; DBMS</h4><span class="skill-card__level">Advanced</span></div>
+                    </div>
+                </div></div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section" id="experience">
+            <h2 class="section__title text-center">Work Experience</h2>
+            <span class="section__subtitle text-center">My journey so far</span>
+            
+            <div class="experience__container container">
+                <div class="experience__timeline-wrapper">
+                    
+                    <div class="experience__timeline-item">
+                        <div class="experience__marker"></div>
+                        <div class="experience__card scroll-reveal-right">
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__role">Python Developer Intern</h3>
+                                    <span class="experience__company">Wistora IQ Solutions</span>
+                                </div>
+                                <span class="experience__date badge">Jan 2026 � May 2026</span>
+                            </div>
+                            <p class="experience__desc">
+                                Developed backend modules using Python and Django for web-based applications, designed and optimized SQL databases to improve data management and query performance.
+                            </p>
+                            <ul class="experience__highlights">
+                                <li><i class="bx bx-check-circle"></i> Identified and fixed application bugs to enhance performance and reliability.</li>
+                                <li><i class="bx bx-check-circle"></i> Used Git for version control and collaborated with the development team.</li>
+                                <li><i class="bx bx-check-circle"></i> Contributed to project development while maintaining code quality and meeting deadlines.</li>
+                            </ul>
+                            </div>
+                        </div>
+                    <div class="experience__timeline-item">
+                        <div class="experience__marker"></div>
+                        <div class="experience__card scroll-reveal-right">
+                            <div class="experience__header">
+                                <div>
+                                    <h3 class="experience__role">Junior Python Developer</h3>
+                                    <span class="experience__company">[Dummy Company Name]</span>
+                                </div>
+                                <span class="experience__date badge">Aug 2024 - Dec 2025</span>
+                            </div>
+                            <p class="experience__desc">
+                                Add your experience description here. Highlight your responsibilities, the technologies you used, and the impact of your work.
+                            </p>
+                            <ul class="experience__highlights">
+                                <li><i class="bx bx-check-circle"></i> Responsibility or achievement 1.</li>
+                                <li><i class="bx bx-check-circle"></i> Responsibility or achievement 2.</li>
+                                <li><i class="bx bx-check-circle"></i> Responsibility or achievement 3.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+<!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section__title text-center">Featured Projects</h2>
+            <span class="section__subtitle text-center">Real-world applications and systems</span>
+            
+            <div class="projects__container container">
+                
+                <!-- Project Grid -->
+                <div class="projects__grid grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    
+                    <!-- Project 1 -->
+                    <article class="project__card mix" id="project-haritha">
+                        <div class="project__content" style="padding: 2rem;">
+                            <h3 class="project__title">Haritha Connect</h3>
+                            <p class="project__description">
+                                Waste Collection Management System developed using Python and Django. Features include complaint tracking, admin monitoring, and a responsive frontend. Built responsive and user-friendly interfaces.
+                            </p>
+                            <div class="project__footer">
+                                <span class="project__type"><i class="bx bx-globe"></i> Web App</span>
+                                <div class="project__links">
+                                    <span class="tech-tag" style="margin-right:5px;">Python</span>
+                                    <span class="tech-tag" style="margin-right:5px;">Django</span>
+                                    <span class="tech-tag">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project__card mix" id="project-cs-dorm">
+                        <div class="project__content" style="padding: 2rem;">
+                            <h3 class="project__title">CS Dorm</h3>
+                            <p class="project__description">
+                                Student Record Management System to handle academic information. Designed database structure for storing and retrieving student data, generated academic performance reports, and created responsive frontend using Bootstrap.
+                            </p>
+                            <div class="project__footer">
+                                <span class="project__type"><i class="bx bx-data"></i> Database System</span>
+                                <div class="project__links">
+                                    <span class="tech-tag" style="margin-right:5px;">Python</span>
+                                    <span class="tech-tag" style="margin-right:5px;">Bootstrap</span>
+                                    <span class="tech-tag">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 3 -->
+                    <article class="project__card mix" id="project-call-guard">
+                        <div class="project__content" style="padding: 2rem;">
+                            <h3 class="project__title">Call Guard</h3>
+                            <p class="project__description">
+                                A Machine Learning-based system to detect scam messages. Utilized NLP techniques and Scikit-learn for text classification and prediction. Developed a Django web interface for real-time user input and results.
+                            </p>
+                            <div class="project__footer">
+                                <span class="project__type"><i class="bx bx-brain"></i> ML &amp; NLP</span>
+                                <div class="project__links">
+                                    <span class="tech-tag" style="margin-right:5px;">Python</span>
+                                    <span class="tech-tag" style="margin-right:5px;">ML/NLP</span>
+                                    <span class="tech-tag">Django</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+<!-- Education & Certifications Section -->
+        <section class="education-certs section" id="education-certs">
+            <div class="education-certs__container container grid">
+                
+                <!-- Education Column -->
+                <div class="education__col">
+                    <h2 class="section__title">Education</h2>
+                    <span class="section__subtitle">My academic history</span>
+                    
+                    <div class="education__timeline">
+                        
+                        <div class="education__item">
+                            <div class="education__bullet"></div>
+                            <span class="education__year">2024 - 2026</span>
+                            <h3 class="education__degree">Master of Computer Applications (MCA)</h3>
+                            <p class="education__institution">APJ Abdul Kalam Technological University</p>
+                            <p class="education__desc">CGPA: 8.02</p>
+                        </div>
+                        
+                        <div class="education__item">
+                            <div class="education__bullet"></div>
+                            <span class="education__year">2021 - 2024</span>
+                            <h3 class="education__degree">Bachelor of Science in Computer Science</h3>
+                            <p class="education__institution">Kannur University</p>
+                            <p class="education__desc">CGPA: 7.17</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Certifications Column -->
+                <div class="certs__col">
+                    <h2 class="section__title">Certifications</h2>
+                    <span class="section__subtitle">Professional qualifications</span>
+                    
+                    <div class="certs__grid">
+                        
+                                                <div class="cert-card">
+                            <div class="cert-card__icon"><i class="bx bx-certification"></i></div>
+                            <h3 class="cert-card__title">Cloud IoT Edge M</h3>
+                            <p class="cert-card__issuer">NPTEL</p>
+                            <span class="cert-card__status badge badge--success">Completed</span>
+                        </div>
+                        
+                        <div class="cert-card">
+                            <div class="cert-card__icon"><i class="bx bxl-python"></i></div>
+                            <h3 class="cert-card__title">Python Programming</h3>
+                            <p class="cert-card__issuer">[Dummy Issuer]</p>
+                            <span class="cert-card__status badge badge--success">Completed</span>
+                        </div>
+                        
+                        <div class="cert-card">
+                            <div class="cert-card__icon"><i class="bx bx-code-alt"></i></div>
+                            <h3 class="cert-card__title">Django Web Development</h3>
+                            <p class="cert-card__issuer">[Dummy Issuer]</p>
+                            <span class="cert-card__status badge badge--success">Completed</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+<!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title text-center">Contact Me</h2>
+            <span class="section__subtitle text-center">Let's build something insightful together</span>
+            
+            <div class="contact__container container grid">
+                
+                <!-- Contact Details -->
+                <div class="contact__info scroll-reveal-left">
+                    <h3 class="contact__title">Get In Touch</h3>
+                    <p class="contact__description">
+                        Have an interesting project or a career opportunity? Feel free to reach out. I am open to discussing Python Developer positions, contract roles, or collaborative research.
+                    </p>
+                    
+                    <div class="contact__cards">
+                        
+                        <div class="contact__card">
+                            <div class="contact__icon-box"><i class="bx bx-envelope"></i></div>
+                            <div>
+                                <h4 class="contact__card-title">Email</h4>
+                                <p class="contact__card-value">lenaunnikrishnan3090@gmail.com</p>
+                                <a href="mailto:lenaunnikrishnan3090@gmail.com" class="contact__card-action">Send Mail <i class="bx bx-right-arrow-alt"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact__form-wrapper scroll-reveal-right">
+                    <form action="https://api.web3forms.com/submit" class="contact__form" id="contact-form" method="POST" novalidate>
+                        <!-- Web3Forms Configuration -->
+                        <input type="hidden" name="access_key" value="fbfeb76d-3c50-4cef-a50d-e7fee76019ea">
+                        <input type="hidden" name="subject" value="New Portfolio Contact from Lena T P's Website">
+                        <input type="hidden" name="from_name" value="Lena T P Portfolio">
+                        <input type="hidden" name="redirect" value="false">
+                        <input type="checkbox" name="botcheck" style="display:none;">
+
+                        <h3 class="contact__title">Drop a Message</h3>
+                        
+                        <div class="form__group">
+                            <input type="text" name="name" id="form-name" class="form__input" placeholder=" " required autocomplete="name">
+                            <label for="form-name" class="form__label">Your Name</label>
+                            <span class="form__error" id="name-error">Name is required</span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="email" name="email" id="form-email" class="form__input" placeholder=" " required autocomplete="email">
+                            <label for="form-email" class="form__label">Email Address</label>
+                            <span class="form__error" id="email-error">Enter a valid email address</span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="text" name="subject" id="form-subject" class="form__input" placeholder=" " required>
+                            <label for="form-subject" class="form__label">Subject</label>
+                            <span class="form__error" id="subject-error">Subject is required</span>
+                        </div>
+                        
+                        <div class="form__group form__group--textarea">
+                            <textarea name="message" id="form-message" class="form__input" placeholder=" " required></textarea>
+                            <label for="form-message" class="form__label">Message</label>
+                            <span class="form__error" id="message-error">Message cannot be empty</span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                            Send Message <i class="bx bx-send"></i>
+                        </button>
+                        
+                        <div class="form__status text-center" id="form-status">
+                            <!-- Success or error messages injected dynamically via JS -->
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__brand">
+                <a href="#home" class="footer__logo">
+                    Lena<span class="logo-dot">.</span>
+                </a>
+                <p class="footer__desc">
+                    Transforming data into insights. Solving business challenges one query at a time.
+                </p>
+            </div>
+            
+            <div class="footer__links-container">
+                <h3 class="footer__title">Navigation</h3>
+                <ul class="footer__links">
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">About</a></li>
+                    <li><a href="#skills" class="footer__link">Skills</a></li>
+                    <li><a href="#projects" class="footer__link">Projects</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__socials">
+                <h3 class="footer__title">Social Links</h3>
+                <div class="footer__socials-links">
+                    <a href="https://linkedin.com" target="_blank" class="footer__social-link" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/lena-unnikrishnan"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="footer__social-link" aria-label="Twitter/X"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/Lena.__._/" target="_blank" class="footer__social-link" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="footer__social-link" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__copy container text-center">
+            <p>&copy; 2026 Lena T P. All rights reserved. | Professional Python Developer Portfolio</p>
+        </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="bx bx-chevron-up"></i>
+    </button>
+
+    <!-- Custom Logic Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
