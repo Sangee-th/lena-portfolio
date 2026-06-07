@@ -274,6 +274,26 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Send Mail mailto fallback handler (opens Gmail in a new tab if desktop client is missing)
+    const mailLink = document.querySelector('.contact__card-action');
+    if (mailLink) {
+        mailLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const mailtoUrl = mailLink.getAttribute('href');
+            const startTime = Date.now();
+            
+            // Try to trigger the system's default mail protocol
+            window.location.href = mailtoUrl;
+            
+            // If the document retains focus after 1000ms, assume no mail client was opened and fallback to Gmail Webmail
+            setTimeout(() => {
+                if (document.hasFocus() && (Date.now() - startTime < 1500)) {
+                    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=lenaunnikrishnan3090@gmail.com', '_blank');
+                }
+            }, 1000);
+        });
+    }
 });
 
 /* ==================== EMERALD GLASS EXTENSIONS ==================== */
