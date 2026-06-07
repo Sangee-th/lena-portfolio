@@ -230,21 +230,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 formStatus.innerHTML = '';
 
                 try {
-                    // WhatsApp Redirect Logic
-                    const phone = "919074762136";
-                    const messageBody = `Hello Lena, I am ${nameInput.value.trim()}.\n\n` +
-                                        `Email: ${emailInput.value.trim()}\n` +
-                                        `Subject: ${subjectInput.value.trim()}\n\n` +
-                                        `Message:\n${messageInput.value.trim()}`;
+                    // Mailto Redirection Logic
+                    const mailtoUrl = `mailto:lenaunnikrishnan3090@gmail.com` +
+                                      `?subject=${encodeURIComponent(subjectInput.value.trim())}` +
+                                      `&body=${encodeURIComponent(
+                                          `Name: ${nameInput.value.trim()}\n` +
+                                          `Email: ${emailInput.value.trim()}\n\n` +
+                                          `Message:\n${messageInput.value.trim()}`
+                                      )}`;
                     
-                    const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(messageBody)}`;
-                    
-                    // Open WhatsApp in a new tab
-                    window.open(waUrl, '_blank');
+                    // Trigger default system email client
+                    window.location.href = mailtoUrl;
 
-                    // Show success
+                    // Show success status
                     formStatus.className = 'form__status text-center show form__status--success';
-                    formStatus.innerHTML = '<i class="bx bx-check-circle"></i> Redirecting to WhatsApp...';
+                    formStatus.innerHTML = '<i class="bx bx-check-circle"></i> Opening default email client...';
                     contactForm.reset();
 
                 } catch (err) {
@@ -272,26 +272,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     input.parentElement.classList.remove('invalid');
                 }
             });
-        });
-    }
-
-    // Send Mail mailto fallback handler (opens Gmail in a new tab if desktop client is missing)
-    const mailLink = document.querySelector('.contact__card-action');
-    if (mailLink) {
-        mailLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            const mailtoUrl = mailLink.getAttribute('href');
-            const startTime = Date.now();
-            
-            // Try to trigger the system's default mail protocol
-            window.location.href = mailtoUrl;
-            
-            // If the document retains focus after 1000ms, assume no mail client was opened and fallback to Gmail Webmail
-            setTimeout(() => {
-                if (document.hasFocus() && (Date.now() - startTime < 1500)) {
-                    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=lenaunnikrishnan3090@gmail.com', '_blank');
-                }
-            }, 1000);
         });
     }
 });
